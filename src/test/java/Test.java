@@ -17,6 +17,8 @@ public class Test {
         System.out.println(decode);
     }
 
+
+
     public static String getRandomString(int length){
         String str="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
         Random random=new Random();
