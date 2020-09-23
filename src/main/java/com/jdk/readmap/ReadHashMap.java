@@ -25,7 +25,9 @@ public class ReadHashMap {
     private static void readMap() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException, NoSuchFieldException {
         HashMap<String, String> map = new HashMap<String, String>(3);
         map.put("hollis", "hollischuang");
-
+        map.putIfAbsent("","");
+        map.putAll(new HashMap<>());
+        map.remove(null);
         Class<?> mapType = map.getClass();
         Method capacity = mapType.getDeclaredMethod("capacity");
         capacity.setAccessible(true);
